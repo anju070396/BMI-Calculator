@@ -13,6 +13,7 @@
 		25B02A48247BBB5A00B0E46D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B02A46247BBB5A00B0E46D /* Main.storyboard */; };
 		25B02A4A247BBB5B00B0E46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B02A49247BBB5B00B0E46D /* Assets.xcassets */; };
 		25B02A4D247BBB5B00B0E46D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B02A4B247BBB5B00B0E46D /* LaunchScreen.storyboard */; };
+		25B02A57247BE64B00B0E46D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B02A56247BE64A00B0E46D /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		25B02A49247BBB5B00B0E46D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25B02A4C247BBB5B00B0E46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25B02A4E247BBB5B00B0E46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B02A56247BE64A00B0E46D /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,30 @@
 			children = (
 				25B02A40247BBB5A00B0E46D /* AppDelegate.swift */,
 				25B02A42247BBB5A00B0E46D /* SceneDelegate.swift */,
-				25B02A44247BBB5A00B0E46D /* ViewController.swift */,
-				25B02A46247BBB5A00B0E46D /* Main.storyboard */,
+				25B02A58247BF1F700B0E46D /* Controller */,
+				25B02A59247BF20700B0E46D /* View */,
 				25B02A49247BBB5B00B0E46D /* Assets.xcassets */,
 				25B02A4B247BBB5B00B0E46D /* LaunchScreen.storyboard */,
 				25B02A4E247BBB5B00B0E46D /* Info.plist */,
 			);
 			path = "BMI Calculator";
+			sourceTree = "<group>";
+		};
+		25B02A58247BF1F700B0E46D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25B02A44247BBB5A00B0E46D /* ViewController.swift */,
+				25B02A56247BE64A00B0E46D /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25B02A59247BF20700B0E46D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25B02A46247BBB5A00B0E46D /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				25B02A45247BBB5A00B0E46D /* ViewController.swift in Sources */,
 				25B02A41247BBB5A00B0E46D /* AppDelegate.swift in Sources */,
 				25B02A43247BBB5A00B0E46D /* SceneDelegate.swift in Sources */,
+				25B02A57247BE64B00B0E46D /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

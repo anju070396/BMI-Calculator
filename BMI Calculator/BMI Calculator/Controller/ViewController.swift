@@ -18,20 +18,25 @@ class ViewController: UIViewController {
     var BMI : Float?
     
     @IBAction func heightValueChnage(_ sender: UISlider) {
-        heightLabel.text = String(format: "%.2f", sender.value) + "m"
+        heightLabel.text = String(format: "%.0f", sender.value) + " cm"
     }
     
     @IBAction func weightValueChange(_ sender: UISlider) {
-        weightlabel.text = String(format: "%.0f", sender.value) + "kg"
+        weightlabel.text = String(format: "%.0f", sender.value) + " kg"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        heightSlider.value = 0.0
-        weightSlider.value = 0.0
+        navigationController?.navigationBar.isHidden = true
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        heightSlider.value = 0.0
+        weightSlider.value = 0.0
+        heightLabel.text = "0 cm"
+        weightlabel.text = "0 kg"
+    }
+    
      @IBAction func calculateBMI(_ sender: UIButton) {
            let height = heightSlider.value
            let weight = weightSlider.value
@@ -40,6 +45,7 @@ class ViewController: UIViewController {
            self.performSegue(withIdentifier: "toResult", sender: self)
        }
        
+    
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if segue.destination is ResultViewController {
                let vc = segue.destination as? ResultViewController
